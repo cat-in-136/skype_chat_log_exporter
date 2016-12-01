@@ -10,7 +10,7 @@ if $0 == __FILE__
   }
 
   OptionParser.new do |opts|
-    opts.banner = "Usage: bundle exec ./#{$0} [options] path/to/main.db" 
+    opts.banner = "Usage: bundle exec ruby #{$0} [options] path/to/main.db" 
 
     opts.on("-l", "--list", "Show chat rooms") do
       options[:mode] = :list
